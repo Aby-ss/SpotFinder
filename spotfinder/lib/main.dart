@@ -31,27 +31,40 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           // Header and Caption
-          Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text(
-                  'Welcome to My App',
-                  style: TextStyle(
-                    fontSize: 32,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
+          Align(
+            alignment: Alignment.bottomLeft,
+            child: Padding(
+              padding: EdgeInsets.only(left: 16, bottom: 50),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  Text(
+                    'Welcome to 👋🏻',
+                    style: TextStyle(
+                      fontSize: 45,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-                SizedBox(height: 16),
-                Text(
-                  'Discover amazing features',
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.white,
+                  Text(
+                    'SpotFinder',
+                    style: TextStyle(
+                      fontSize: 64,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-              ],
+                  SizedBox(height: 5),
+                  Text(
+                    'Your hassle-free parking solution, powered by real-time data and intuitive maps.',
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ],
